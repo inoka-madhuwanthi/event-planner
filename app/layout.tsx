@@ -26,7 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col ">
-      <NeonAuthUIProvider authClient={authClient}>
+      <NeonAuthUIProvider authClient={authClient} defaultTheme="dark">
       <header>
         <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4">
           <Link href={"/"}> Event Planner</Link>
