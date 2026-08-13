@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 .env
+.agents
+.claude
+.idea
 /.pnp
 .pnp.*
 .yarn/*
