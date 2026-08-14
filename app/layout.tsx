@@ -8,7 +8,8 @@ import { UserButton } from "@neondatabase/auth/react/ui";
 
 import { authClient } from "@/lib/auth/client";
 import { getSession } from "@/lib/auth/server";
-import { Button } from "@/components/ui/button";
+
+export const dynamic = "force-dynamic";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
