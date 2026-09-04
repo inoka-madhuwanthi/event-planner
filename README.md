@@ -1,131 +1,69 @@
-# Event Planner
+# 📅 Event Planner
 
-A modern event planning web application built with **Next.js**, **Neon Auth**, **Neon Postgres**, **Prisma**, and **shadcn/ui**.
+A modern event planning web application built as part of my learning journey with **Next.js**, **TypeScript**, **Neon Auth**, **Neon Postgres**, **Prisma**, and **shadcn/ui**.
 
-Event Planner makes it easy to create events, share invitations, and manage RSVP responses from one place.
+The application allows users to create and manage events, share invitation links, and track RSVP responses from a centralized dashboard.
 
 ## Preview
 
 ![Event Planner Home Page](public/home-preview.png)
 
-## Features
+## ✨ Features
 
-- Create and manage events
-- User authentication with Neon Auth
-- Share unique event invitation links
-- RSVP management
-- Track attendee responses
-- Responsive landing page and navigation
-- Modern light UI built with shadcn/ui
-- PostgreSQL database with Prisma ORM
+* Create and manage events
+* User authentication with Neon Auth
+* Protected user dashboard
+* Share unique event invitation links
+* RSVP management
+* Track attendee responses
+* Responsive landing page and navigation
+* Modern UI built with shadcn/ui
+* PostgreSQL database integration
+* Prisma ORM for database operations
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **Framework:** Next.js 16
-- **Language:** TypeScript
-- **Authentication:** Neon Auth
-- **Database:** Neon Postgres
-- **ORM:** Prisma
-- **UI:** shadcn/ui
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide React
+* **Framework:** Next.js 16
+* **Language:** TypeScript
+* **Authentication:** Neon Auth
+* **Database:** Neon Postgres
+* **ORM:** Prisma
+* **UI:** shadcn/ui
+* **Styling:** Tailwind CSS
+* **Icons:** Lucide React
 
-## Project Structure
+## 📚 What I Learned
 
-```text
-event-planner/
-├── app/
-├── components/
-├── lib/
-├── prisma/
-├── public/
-├── .gitignore
-├── package.json
-├── package-lock.json
-└── README.md
-```
+Through this project, I gained practical experience with:
 
-## Getting Started
+* Building full-stack applications using Next.js
+* Working with the Next.js App Router
+* Using TypeScript in a real-world application
+* Implementing authentication and protected routes
+* Connecting a Next.js application to Neon Postgres
+* Using Prisma ORM for database operations and schema management
+* Designing and working with relational database models
+* Creating reusable UI components with shadcn/ui
+* Building responsive layouts with Tailwind CSS
+* Managing forms and user interactions
+* Creating dynamic event invitation links
+* Handling RSVP workflows and attendee data
+* Structuring a modern Next.js project
+* Managing environment variables securely
 
-### 1. Clone the repository
 
-```bash
-git clone https://github.com/inoka-madhuwanthi/event-planner.git
-cd event-planner
-```
+## 🔐 Authentication
 
-### 2. Install dependencies
+Authentication is handled using **Neon Auth**.
 
-```bash
-npm install
-```
+Authenticated users can access their personal dashboard and manage their events, while protected functionality is restricted to signed-in users.
 
-### 3. Configure environment variables
+## 🗄️ Database
 
-Create a `.env.local` file and add the required Neon and database environment variables.
+The application uses **Neon Postgres** as the database and **Prisma ORM** for database access.
 
-> Never commit `.env.local` or other files containing secrets to GitHub.
+Prisma is used to define the database schema and handle operations related to users, events, and RSVP data.
 
-### 4. Generate Prisma Client
-
-```bash
-npx prisma generate
-```
-
-### 5. Run the development server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Application Flow
-
-```text
-Landing Page
-     │
-     ├── Sign Up
-     │
-     └── Sign In
-            │
-            ▼
-       Dashboard
-            │
-            ├── Create Event
-            │
-            ├── Manage Events
-            │
-            └── Track RSVPs
-```
-
-## Authentication
-
-Authentication is handled using **Neon Auth**. Authenticated users can access their dashboard and manage their events.
-
-## Database
-
-The application uses **Neon Postgres** with **Prisma ORM** for database access and data management.
-
-## Development
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Build the application:
-
-```bash
-npm run build
-```
-
-Start the production server:
-
-```bash
-npm start
-```
 
 ## Future Improvements
 
@@ -137,6 +75,3 @@ npm start
 - Advanced attendee management
 - Event analytics
 
-## License
-
-This project is for learning and development purposes.
