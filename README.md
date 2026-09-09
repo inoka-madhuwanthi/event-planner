@@ -4,24 +4,20 @@ A modern event planning web application built as part of my learning journey wit
 
 The application allows users to create and manage events, share invitation links, and track RSVP responses from a centralized dashboard.
 
-## Preview
+### Preview
 
 ![Event Planner Home Page](public/home-preview.png)
 
-## ✨ Features
+### Features
 
 * Create and manage events
-* User authentication with Neon Auth
-* Protected user dashboard
-* Share unique event invitation links
-* RSVP management
-* Track attendee responses
-* Responsive landing page and navigation
-* Modern UI built with shadcn/ui
-* PostgreSQL database integration
-* Prisma ORM for database operations
+* User authentication & protected dashboard
+* Shareable event invitation links
+* RSVP and attendee management
+* Responsive UI
+* PostgreSQL database with Prisma
 
-## 🛠️ Tech Stack
+### Tech Stack
 
 * **Framework:** Next.js 16
 * **Language:** TypeScript
@@ -32,46 +28,27 @@ The application allows users to create and manage events, share invitation links
 * **Styling:** Tailwind CSS
 * **Icons:** Lucide React
 
-## 📚 What I Learned
 
-Through this project, I gained practical experience with:
+### Authentication
 
-* Building full-stack applications using Next.js
-* Working with the Next.js App Router
-* Using TypeScript in a real-world application
+Authentication is handled using Neon Auth, with protected routes for signed-in users.
+
+
+###  Database
+
+The application uses Neon Postgres with Prisma ORM for database management and operations.
+
+### What I Learned
+
+* Building full-stack applications with Next.js
+* Working with the App Router and TypeScript
 * Implementing authentication and protected routes
-* Connecting a Next.js application to Neon Postgres
-* Using Prisma ORM for database operations and schema management
-* Designing and working with relational database models
-* Creating reusable UI components with shadcn/ui
-* Building responsive layouts with Tailwind CSS
-* Managing forms and user interactions
-* Creating dynamic event invitation links
-* Handling RSVP workflows and attendee data
-* Structuring a modern Next.js project
-* Managing environment variables securely
+* Working with PostgreSQL and Prisma
+* Designing relational database models
+* Building responsive UIs with Tailwind CSS
+* Managing forms, RSVP workflows, and dynamic links
 
 
-## 🔐 Authentication
-
-Authentication is handled using **Neon Auth**.
-
-Authenticated users can access their personal dashboard and manage their events, while protected functionality is restricted to signed-in users.
-
-## 🗄️ Database
-
-The application uses **Neon Postgres** as the database and **Prisma ORM** for database access.
-
-Prisma is used to define the database schema and handle operations related to users, events, and RSVP data.
 
 
-## Future Improvements
-
-- Email invitations
-- Calendar integration
-- Event reminders
-- Real-time RSVP updates
-- Event image uploads
-- Advanced attendee management
-- Event analytics
 
